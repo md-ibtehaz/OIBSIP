@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MY PORTFOLIO PAGE</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <div id="header">
+  <div class="container">
+      <nav>
+    <ul>
+          <li><a href="#">Home</a></li>
+       <li> <a href="#">About</a></li>
+      <li><a href="#">Portfolio</a></li>
+       <li> <a href="#">Contact</a></li>
+      </ul>
+      </nav>
+      <div class="header-text">
+      <p>WEB DEVELOPER</p>
+          <h1>Hi, I'm <span>MD IBTEHAZ</span><br> from India</h1>
+      </div>
+        </div>
+    
+    </div>
+    <!--------about----------->
+    <div id="about">
+    <div class="container">
+        <div class="row">
+        <div class="about-col-1">
+            <img src="https://assets.onecompiler.app/42qdhb9f8/42qdh73te/ibte2.jpeg">
+            </div>
+              <div class="about-col-2">
+                  <h1 class="subtitle">About Me</h1>
+                  <p>
+                  Passionate Web Developer with 1 year of experience specializing in front-end and back-end development. Proficient in HTML, CSS, JavaScript, and modern frameworks like React and Angular. Skilled in creating responsive, user-friendly websites and applications. Adapt at problem-solving and collaborative work, with a strong focus on delivering high-quality results. Looking to contribute technical expertise and creativity to a dynamic team
+                  </p>
+                  <div class="tab-titles">
+                  <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                       <p class="tab-links"onclick="opentab('education')">Education</p>
+                  
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                      <li><span>HTML, CSS, JAVASCRIPT</span><br>Web development</li>
+                        <li><span>C, C++, PYTHON, JAVA</span><br></li>
+                        <li><span>MY SQL, NETBEANS</span><br></li>
+                      
+                      </ul>
+                  
+                  </div>
+                  <div class="tab-contents"id="education">
+                  <ul>
+                      <li><span>2009-2019</span><br>Anglo Arabic Secondary school,kolkata</li>
+                        <li><span>2019-2021</span><br>ST MARY'S CHURCH HIGH SCHOOL</li>
+                        <li><span>2021-2025</span><br>Aliah University,Kolkata </li>
+                      
+                      </ul>
+                  
+                  </div>
+                  
+            </div></div>        
+        
+        </div>
+         
+         
+         </div>
+    <!------- CONTACT------>
+    <div id="contact">
+    <div class="container">
+        <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1><br>
+            <p>mdibtehaz03@gmail.com</p><br>
+            <p>8344244550</p>
+            <div class="social-icons">
+            <a href=" "><i class="fab fa-facebook"></i></a>
+            <a href=" "><i class="fab fa-linekdin"></i></a>
+                <a href=" "><i class="fab fa-instagram"></i></a>
+            </div><br>
+            <a href="my-cv.pdf" download class="btn btn2"><button style="background-color: #ff004f;color:white">Download CV</button></a>
+            </div>
+        <div class="contact-right">
+        <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">SUBMIT</button>
+            </form>
+        </div>
+        
+        
+        </div>
+    
+    </div>
+    </div>
+    
+    
+    
+    <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+      var tabcontents=document.getElementsByClassName("tab-contents"); 
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            
+        for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+    
+    </body>
+
+</html>
